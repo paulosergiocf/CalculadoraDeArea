@@ -100,13 +100,21 @@ def bt_igual():
         numero = float(numero)
 
         if menu == 'ha':
-            resultado_a = ('{:.2f} m²'.format(numero*10000))
+            resultado_a = ('{:_.2f} m²'.format(numero*10000))
             resultado_b = ('{:.2f} Alq Pta'.format( numero/2.42))
+
+            resultado_a = resultado_a.replace(".",",")
+            resultado_a = resultado_a.replace("_",".")
+
             lb_display_02["text"]=resultado_a
             lb_display_03["text"]=resultado_b
         elif menu == 'alq':
             resultado_a = ('{:.4f} ha'.format(numero*2.42))
-            resultado_b = ('{:.2f} m²'.format(numero*24200))
+            resultado_b = ('{:_.2f} m²'.format(numero*24200))
+
+            resultado_b = resultado_b.replace(".",",")
+            resultado_b = resultado_b.replace("_",".")
+
             lb_display_02["text"]=resultado_a
             lb_display_03["text"]=resultado_b
         elif menu == 'm2':
