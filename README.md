@@ -12,21 +12,21 @@
  |Hectares|Ha|2,4200|
  |Metros Quadrados|m²|24.200,00|
  
- Como pode ser observado, 1,00 Alqueire Paulista equivale a 2,4200 hectares, que por sua vez equivale a 24.200,00 metros quadrados.
+ Como pode ser observado, 1,00 Alqueire Paulista equivale a 2,4200 hectares, que por sua vez equivale a 24.200,00 metros quadrados, então o calculo para esta conversão é:
 
  <hr>
 
  ## Desenvolvimento
 
-Esta aplicação foi desenvolvida utilizando Python 3.7, e o _tkinter_ foi utilizado como interface gráfica, escolhido devido a sua simplicidade e por ser nativo da linguagem.
+Esta aplicação foi desenvolvida utilizando Python 3, e o _tkinter_ foi utilizado como interface gráfica, escolhido devido a sua simplicidade e por ser nativo da linguagem.
 
-
-![capturadetela](https://user-images.githubusercontent.com/49497668/127912262-c74b7427-5b84-4d3e-8573-7b38309c14d2.PNG)
 
  > Há alguns pontos que pretendo mudar no software posteriormente:
- > - [x] a formatação do número em metros quadrados para milhar.
- > - [ ] os trechos que se repetem no código referente as funções dos botões clicados na interface.
- > - [ ] os trechos que se repetem no código referente as funções da entrada de teclado dos números.
+ > - [x] A formatação do número em metros quadrados para milhar.
+ > - [x] Os trechos que se repetem no código referente as funções dos botões clicados na interface.
+ > - [x] Os trechos que se repetem no código referente as funções da entrada de teclado dos números.
+ > -[X] Separação das funções de conversão do programa principal.
+ > - [  ] Bloquear Redimensionamento do Software.
 
 
 <hr>

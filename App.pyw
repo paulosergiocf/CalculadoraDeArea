@@ -4,12 +4,12 @@
 import tkinter as tk
 from ferramentas import conversoes as cv
 
-fonte = ['Arial 9 bold','Arial 12 bold', 'Arial 10']
+fonte = ['Noto 10','Noto 8 bold', 'Noto 10']
 cor = {"Fundo":'#252525',"Fonte Padrão":'#f9f9f9',"Fundo Display":'#181818',"ok":'green',"bad":'#D4424F' }
 
 janela = tk.Tk()
 janela.title('Conversão de Área')
-janela.geometry("350x500")
+janela.geometry("350x550")
 janela["bg"]=cor["Fundo"]
 photo = tk.PhotoImage(file ='icones/icon.png')
 janela.iconphoto(False, photo)
@@ -99,10 +99,10 @@ def check():
     elif menu==3:
         bt_m2["bg"]=cor["ok"]; bt_alq["bg"] = bt_ha["bg"] = cor["Fundo"];lb_display_r1["fg"]=lb_display_r2["fg"]=cor["ok"];lb_display_r1["bg"]=lb_display_r2["bg"]=cor["Fundo Display"];lb_display_r1["text"]='';lb_display_r2["text"]=''
 
-container_geral = tk.Frame(janela, bg=cor["Fundo"], padx=20, pady=20)
+container_geral = tk.Frame(janela, bg=cor["Fundo"], padx=20, pady=10)
 container_geral.pack()
 
-container_display = tk.Frame(container_geral, bg=cor["Fundo"], padx=20, pady=20)
+container_display = tk.Frame(container_geral, bg=cor["Fundo"], padx=20, pady=10)
 container_display.pack()
 lb_display_input = tk.Label(container_display, bg=cor["Fundo Display"],fg=cor["Fonte Padrão"], text="0", font=fonte[0], width=34, height=3)
 lb_display_input.pack()
@@ -116,65 +116,65 @@ container_telcadonumerico.pack()
 
 container_telcadonumerico_a = tk.Frame(container_geral, bg=cor["Fundo"], padx=2, pady=2)
 container_telcadonumerico_a.pack()
-bt_num = tk.Button(container_telcadonumerico_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="07", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('7'))
+bt_num = tk.Button(container_telcadonumerico_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="7", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('7'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="08", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('8'))
+bt_num = tk.Button(container_telcadonumerico_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="8", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('8'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="09", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('9'))
+bt_num = tk.Button(container_telcadonumerico_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="9", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('9'))
 bt_num.pack(side=tk.LEFT)
 
 container_telcadonumerico_b = tk.Frame(container_geral, bg=cor["Fundo"], padx=2, pady=2)
 container_telcadonumerico_b.pack()
-bt_num = tk.Button(container_telcadonumerico_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="04", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('4'))
+bt_num = tk.Button(container_telcadonumerico_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="4", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('4'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="05", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('5'))
+bt_num = tk.Button(container_telcadonumerico_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="5", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('5'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="06", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('6'))
+bt_num = tk.Button(container_telcadonumerico_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="6", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('6'))
 bt_num.pack(side=tk.LEFT)
 
 container_telcadonumerico_c = tk.Frame(container_geral, bg=cor["Fundo"], padx=2, pady=2)
 container_telcadonumerico_c.pack()
-bt_num = tk.Button(container_telcadonumerico_c, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="01", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('1'))
+bt_num = tk.Button(container_telcadonumerico_c, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="1", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('1'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_c, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="02", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('2'))
+bt_num = tk.Button(container_telcadonumerico_c, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="2", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('2'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_c, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="03", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('3'))
+bt_num = tk.Button(container_telcadonumerico_c, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="3", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('3'))
 bt_num.pack(side=tk.LEFT)
 
 container_telcadonumerico_d = tk.Frame(container_geral, bg=cor["Fundo"], padx=2, pady=2)
 container_telcadonumerico_d.pack()
-bt_num = tk.Button(container_telcadonumerico_d, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="0", font=fonte[0], width=10, height=2, command=lambda:tecladoNum('0'))
+bt_num = tk.Button(container_telcadonumerico_d, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="0", font=fonte[0], width=8, height=2, command=lambda:tecladoNum('0'))
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_telcadonumerico_d, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text=",", font=fonte[0], width=10, height=2, command=lambda:tecladoNum(','))
+bt_num = tk.Button(container_telcadonumerico_d, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text=",", font=fonte[0], width=8, height=2, command=lambda:tecladoNum(','))
 bt_num.pack(side=tk.LEFT)
 
 container_opcoes = tk.Frame(container_geral, bg=cor["Fundo"], padx=20, pady=20)
 container_opcoes.pack()
-container_opcoes_a = tk.Frame(container_geral, bg=cor["Fundo"])
+container_opcoes_a = tk.Frame(container_opcoes, bg=cor["Fundo"])
 container_opcoes_a.pack()
 lb_converter_de = tk.Label(container_opcoes_a, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="Selecione o tipo de área a converter", font=fonte[0])
 lb_converter_de.pack()
-container_opcoes_b = tk.Frame(container_geral, bg=cor["Fundo"])
+container_opcoes_b = tk.Frame(container_opcoes, bg=cor["Fundo"])
 container_opcoes_b.pack()
 
 var = tk.IntVar()
-bt_ha = tk.Radiobutton(container_opcoes_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="HA", font=fonte[0], width=10, height=2,variable=var, value=1, command=check)
+bt_ha = tk.Radiobutton(container_opcoes_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="HA", font=fonte[0], width=8, height=2,variable=var, value=1, command=check)
 bt_ha.pack(side=tk.LEFT)
 
-bt_alq = tk.Radiobutton(container_opcoes_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="ALQ", font=fonte[0], width=10, height=2,variable=var, value=2, command=check)
+bt_alq = tk.Radiobutton(container_opcoes_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="ALQ", font=fonte[0], width=8, height=2,variable=var, value=2, command=check)
 bt_alq.pack(side=tk.LEFT)
 
-bt_m2 = tk.Radiobutton(container_opcoes_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="M2", font=fonte[0], width=10, height=2,variable=var, value=3, command=check)
+bt_m2 = tk.Radiobutton(container_opcoes_b, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="M2", font=fonte[0], width=8, height=2,variable=var, value=3, command=check)
 bt_m2.pack(side=tk.LEFT)
 
 container_funcoes = tk.Frame(container_geral, bg=cor["Fundo"], padx=10, pady=10)
 container_funcoes.pack()
 
-bt_num = tk.Button(container_funcoes, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="C", font=fonte[0], width=10, height=2, command=delete_all)
+bt_num = tk.Button(container_funcoes, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="C", font=fonte[0], width=8, height=2, command=delete_all)
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_funcoes, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="DEL", font=fonte[0], width=10, height=2,command=delete)
+bt_num = tk.Button(container_funcoes, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="DEL", font=fonte[0], width=8, height=2,command=delete)
 bt_num.pack(side=tk.LEFT)
-bt_num = tk.Button(container_funcoes, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="=", font=fonte[0], width=10, height=2, command=lambda:converter(digitos, menu))
+bt_num = tk.Button(container_funcoes, bg=cor["Fundo"], fg=cor["Fonte Padrão"], text="=", font=fonte[0], width=8, height=2, command=lambda:converter(digitos, menu))
 
 bt_num.pack(side=tk.LEFT)
 janela.bind(sequence="<Key>", func=bt_press)
