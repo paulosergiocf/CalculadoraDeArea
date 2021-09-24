@@ -25,8 +25,8 @@ Esta aplicação foi desenvolvida utilizando Python 3, e o _tkinter_ foi utiliza
  > - [x] A formatação do número em metros quadrados para milhar.
  > - [x] Os trechos que se repetem no código referente as funções dos botões clicados na interface.
  > - [x] Os trechos que se repetem no código referente as funções da entrada de teclado dos números.
- > -[X] Separação das funções de conversão do programa principal.
- > - [  ] Bloquear Redimensionamento do Software.
+ >  - [Separação das funções de conversão do programa principal.
+ > Bloquear Redimensionamento do Software.
 
 
 <hr>

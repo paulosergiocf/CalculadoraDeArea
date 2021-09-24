@@ -64,6 +64,8 @@ def delete():
 def delete_all():
     digitos.clear()
     bt_m2["bg"]= bt_alq["bg"] = bt_ha["bg"] = cor["Fundo"];lb_display_r1["text"]='';lb_display_r2["text"]='';lb_display_r1["bg"]=lb_display_r2["bg"]=cor["Fundo Display"]
+    global menu
+    menu =''
     updateDisplay(digitos)
 
 def converter(a=0, d=''):
