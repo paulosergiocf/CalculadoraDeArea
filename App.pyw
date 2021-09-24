@@ -20,7 +20,6 @@ escolha =[]
 
 def bt_press(e):
     s = ((f'{repr(e.char)}').replace("'",""))
-    print(s)
     if s.isalpha():
         pass
     else:
