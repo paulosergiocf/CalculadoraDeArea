@@ -32,7 +32,8 @@ Retorno Caso não seja escolhido uma opção de conversão.
  > - [x] Os trechos que se repetem no código referente as funções dos botões clicados na interface.
  > - [x] Os trechos que se repetem no código referente as funções da entrada de teclado dos números.
  > - [X] Separação das funções de conversão do programa principal.
- > - [ ] Bloquear Redimensionamento do Software.
+ > - [x] Bloquear Redimensionamento do Software.
+ > - [ ] Refatorar Software com Orientação a Objeto.
 
 
 <hr>
@@ -41,7 +42,7 @@ Retorno Caso não seja escolhido uma opção de conversão.
 
 Paulo Sergio de Campos Filho
 
-:e-mail: paulosergiocf@protonmail.com
-:iphone: (41) 99562-2894
+:e-mail: paulosergiocf.dev@gmail.com
+:iphone: (15) 99846-2920
 
 [Linkedin](https://www.linkedin.com/in/pauloseriocf/) | [github](https://github.com/paulosergiocf)
